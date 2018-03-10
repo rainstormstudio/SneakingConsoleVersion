@@ -8,10 +8,11 @@ private:
 	int posY;
 	float speed;
 	char appearance;
+	int color;
 
 public:
-	Player(char initAppearance, int initX, int initY, float initSpeed);
+	Player(char initAppearance, int color, int initX, int initY, float initSpeed);
 	~Player();
-	void move(KeyInput* keys, int deltatime);
+	void move(KeyInput* keys, int deltatime, int screen_width, int screen_height);
 	void draw(Graphics* gfx);
 };

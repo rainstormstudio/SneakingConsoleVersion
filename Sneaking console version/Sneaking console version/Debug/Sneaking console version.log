@@ -1,3 +1,15 @@
-﻿  Game.cpp
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\game.cpp(32): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+﻿  Player.cpp
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\player.cpp(20): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\player.cpp(22): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\player.cpp(25): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\player.cpp(27): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\player.cpp(30): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\player.cpp(32): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\player.cpp(35): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\player.cpp(37): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+  Game.cpp
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\game.cpp(34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Generating Code...
+  Skipping... (no relevant changes detected)
+  Main.cpp
   Sneaking console version.vcxproj -> E:\RAINSTORM PROJECTS\Test\Sneaking console version\Sneaking console version\Debug\Sneaking console version.exe

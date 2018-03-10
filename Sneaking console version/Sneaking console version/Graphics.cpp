@@ -1,5 +1,4 @@
 #include "Graphics.h"
-#include <iostream>
 
 Graphics::Graphics(int width, int height)
 {
@@ -31,7 +30,7 @@ Graphics::Graphics(int width, int height)
 	font_info.dwFontSize.X = 8;
 	font_info.dwFontSize.Y = 8;
 	font_info.FontFamily = FF_DONTCARE;
-	font_info.FontWeight = FW_NORMAL;
+	font_info.FontWeight = 600;//FW_NORMAL;
 	SetCurrentConsoleFontEx(consoleHandle, FALSE, &font_info);
 
 	// cursor setting
@@ -41,10 +40,12 @@ Graphics::Graphics(int width, int height)
 	SetConsoleCursorInfo(consoleHandle, &cursor_set); 
 	SetConsoleMode(consoleHandle, ENABLE_EXTENDED_FLAGS);
 
-	// initialize the foreground
+	// initialize the foreground and color
 	for (int i = 0; i < screen_height; i++)
-		for (int j = 0; j < screen_width; j++)
+		for (int j = 0; j < screen_width; j++) {
 			foreground[i][j] = L' ';
+			color[i][j] = 7;
+		}
 }
 
 Graphics::~Graphics()
@@ -54,21 +55,54 @@ Graphics::~Graphics()
 void Graphics::clear()
 {
 	for (int i = 0; i < screen_height; i++)
-		for (int j = 0; j < screen_width; j++)
+		for (int j = 0; j < screen_width; j++) {
 			foreground[i][j] = L' ';
+			color[i][j] = 7;
+		}
 }
 
 void Graphics::render()
 {
 	COORD cursor_pos = { 0,0 };
 	SetConsoleCursorPosition(consoleHandle, cursor_pos);
-	SetConsoleTextAttribute(consoleHandle, 11);
-	for (int i = 0; i < screen_height; i++) 
-		std::cout << foreground[i] << "\n";
+	SetConsoleTextAttribute(consoleHandle, 7);
+	for (int i = 0; i < screen_height; i++) {
+		for (int j = 0; j < screen_width; j++) {
+			SetConsoleTextAttribute(consoleHandle, color[i][j]);
+			std::cout << foreground[i][j];
+		}
+		std::cout << "\n";
+	}
 	SetConsoleTextAttribute(consoleHandle, 7);
 }
 
-void Graphics::drawSpot(char value, int posX, int posY)
+void Graphics::drawSpot(char value, int initColor, int posX, int posY)
 {
 	foreground[posX][posY] = value;
+	color[posX][posY] = initColor;
 }
+
+void Graphics::drawRect(int initColor, int left, int top, int right, int bottom)
+{
+	for (int i = top; i <= bottom; i++)
+		for (int j = left; j <= right; j++)
+			color[i][j] = initColor;
+}
+
+void Graphics::drawText(std::string text, int initColor, int start_x, int start_y, int length)
+{
+	int i = start_x;
+	int len = text.length();
+	if (length < len)
+		length = len;
+	int count = 0;
+	for (int j = start_y; j <= start_y + length; j ++){
+		color[i][j] = initColor;
+		if (count < len) {
+			foreground[i][j] = text[count];
+			count++;
+		}
+	}
+}
+
+

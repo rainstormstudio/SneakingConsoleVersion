@@ -13,7 +13,9 @@ Game::Game(int initWidth, int initHeight)
 	screen_height = initHeight;
 	gfx = new Graphics(screen_width, screen_height);
 	keys = new KeyInput();
-	player = new Player(L'O', screen_width / 2, screen_height / 2, 1);
+	player = new Player(L'O', 43, screen_width / 2, screen_height / 2, 1);
+	hud = new HUD();
+	state = NORMAL;
 
 	bool gameloop = TRUE;
 
@@ -43,12 +45,13 @@ Game::~Game()
 void Game::update(int delta)
 {
 	keys->update();
-	player->move(keys, delta);
+	player->move(keys, delta, screen_width, screen_height);
 }
 
 void Game::render()
 {
 	gfx->clear();
 	player->draw(gfx);
+	hud->update(state, gfx, screen_width, screen_height);
 	gfx->render();
 }
