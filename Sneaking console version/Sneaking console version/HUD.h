@@ -1,6 +1,7 @@
 #pragma once
 #include "Graphics.h"
 #include <string>
+#include <math.h>
 
 class HUD {
 private:
@@ -9,5 +10,5 @@ private:
 	const int WARNING = 2;
 
 public:
-	void update(int state, Graphics* gfx, int screen_width, int screen_height);
+	void update(int state, int extent, Graphics* gfx, int screen_width, int screen_height);
 };

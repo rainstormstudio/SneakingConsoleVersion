@@ -59,6 +59,6 @@ void Game::render()
 	gfx->clear();
 	player->draw(gfx);
 	enemy->draw(gfx);
-	hud->update(state, gfx, screen_width, screen_height);
+	hud->update(state, enemy->extent, gfx, screen_width, screen_height);
 	gfx->render();
 }

@@ -8,13 +8,13 @@ private:
 	const int LEFT	= 2;
 	const int RIGHT = 3;
 
-	const int NORMAL = 0;
-	const int CAUTION = 1;
-	const int WARNING = 2;
-	const int VIEW_WIDTH = 5;
-	const int VIEW_HEIGHT = 10;
-	const int WARN_WIDTH = 3;
-	const int WARN_HEIGHT = 5;
+	const int NORMAL		= 0;
+	const int CAUTION		= 1;
+	const int WARNING		= 2;
+	const int VIEW_WIDTH	= 3;
+	const int VIEW_HEIGHT	= 10;
+	const int WARN_WIDTH	= 3;
+	const int WARN_HEIGHT	= 6;
 
 	int posX;
 	int posY;
@@ -36,6 +36,7 @@ private:
 	void setColor();
 
 public:
+	int extent;
 	int state;
 
 	Enemy(char initAppearance, int initColor, int initX, int initY, float initSpeed);

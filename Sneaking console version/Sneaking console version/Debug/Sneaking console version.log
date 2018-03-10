@@ -1,25 +1,18 @@
-﻿  Game.cpp
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\game.cpp(37): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-  Generating Code...
-  Compiling...
-  Enemy.cpp
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(116): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(120): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(124): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(128): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(138): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(142): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(146): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(150): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(166): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(170): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(174): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(178): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(193): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(197): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(201): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(205): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-  Generating Code...
-  Skipping... (no relevant changes detected)
-  Main.cpp
+﻿  Enemy.cpp
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(183): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(187): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(191): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(195): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(205): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(209): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(213): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(217): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(237): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(241): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(245): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(249): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(264): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(268): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(272): warning C4244: '-=': conversion from 'float' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\enemy.cpp(276): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
   Sneaking console version.vcxproj -> E:\RAINSTORM PROJECTS\Test\Sneaking console version\Sneaking console version\Debug\Sneaking console version.exe
