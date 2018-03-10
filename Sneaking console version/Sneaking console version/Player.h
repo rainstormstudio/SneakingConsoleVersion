@@ -4,13 +4,13 @@
 
 class Player {
 private:
-	int posX;
-	int posY;
 	float speed;
 	char appearance;
 	int color;
 
 public:
+	int posX;
+	int posY;
 	Player(char initAppearance, int color, int initX, int initY, float initSpeed);
 	~Player();
 	void move(KeyInput* keys, int deltatime, int screen_width, int screen_height);

@@ -17,6 +17,9 @@ Game::Game(int initWidth, int initHeight)
 	hud = new HUD();
 	state = NORMAL;
 
+	enemy = new Enemy('^', 26, 5, 5, 1);
+	enemy->setRoutine(5, 5, 20, 5);
+
 	bool gameloop = TRUE;
 
 	while (gameloop) {
@@ -46,12 +49,16 @@ void Game::update(int delta)
 {
 	keys->update();
 	player->move(keys, delta, screen_width, screen_height);
+	enemy->see(player->posX, player->posY);
+	state = enemy->state;
+	enemy->move(screen_width, screen_height);
 }
 
 void Game::render()
 {
 	gfx->clear();
 	player->draw(gfx);
+	enemy->draw(gfx);
 	hud->update(state, gfx, screen_width, screen_height);
 	gfx->render();
 }
