@@ -15,11 +15,13 @@ Enemy_Group::Enemy_Group(int total, int screen_width, int screen_height)
 				int temp_a = randInt((screen_height / quadrant_x) * i, (screen_height / quadrant_x) * (i + 1));
 				int temp_b = randInt((screen_width / quadrant_y) * j, (screen_width / quadrant_y) * (j + 1));
 				obj[count] = new Enemy('A', 26, temp_x, temp_y, 1);
-				obj[count]->setRoutine(temp_y, temp_x, temp_a, temp_b);
+				obj[count]->setRoutine(temp_y, temp_x, temp_b, temp_a);
 				//obj[count]->setRoutine(i*5 + 10, i*5 + 10, j * 4, j * 4 + 20);
 				count++;
 			}
 		}
+
+	srand((unsigned)time(NULL));
 }
 
 Enemy_Group::~Enemy_Group()
@@ -57,7 +59,6 @@ void Enemy_Group::draw(Graphics * gfx)
 
 int Enemy_Group::randInt(int min, int max)
 {
-	srand((unsigned)time(NULL));
 	if (min <= 2) min = 2;
 	if (max >= 46) max = 46;
 	return min + (rand() % static_cast<int>(max - min + 1));

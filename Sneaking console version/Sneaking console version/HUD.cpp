@@ -24,4 +24,5 @@ void HUD::update(int state, int extent, int strength, int strength_usable, Graph
 		gfx->drawRect(34, 11, 1, 11 + round(strength / 100.0 * level), 1);
 	else
 		gfx->drawRect(255, 11, 1, 11 + round(strength / 100.0 * level), 1);
+	gfx->drawRect(0, 12 + round(strength / 100.0 * level), 1, screen_width, 1);
 }

@@ -14,7 +14,7 @@ Game::Game(int initWidth, int initHeight)
 	gfx = new Graphics(screen_width, screen_height);
 	keys = new KeyInput();
 	player = new Player(L'O', 43, screen_width / 2, screen_height / 2, 1);
-	enemy_group = new Enemy_Group(2, screen_width, screen_height);
+	enemy_group = new Enemy_Group(4, screen_width, screen_height);
 	hud = new HUD();
 	state = NORMAL;
 
@@ -89,5 +89,6 @@ void Game::pause_screen()
 {
 	gfx->clear();
 	gfx->drawRect(0, 0, 0, screen_width, screen_height);
+	gfx->drawText("PAUSE", 7, screen_height / 2, screen_width / 2 - 3, 6);
 	gfx->render();
 }
