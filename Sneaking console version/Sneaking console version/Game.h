@@ -6,6 +6,7 @@
 #include "Graphics.h"
 #include "KeyInput.h"
 #include "Player.h"
+#include "Enemy_Group.h"
 #include "Enemy.h"
 #include "HUD.h"
 
@@ -23,7 +24,7 @@ private:
 	HUD* hud;
 	int state;
 
-	Enemy* enemy;
+	Enemy_Group* enemy_group;
 public:
 	Game(int initWidth, int initHeight);
 	~Game();

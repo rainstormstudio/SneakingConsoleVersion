@@ -11,7 +11,7 @@ private:
 	const int NORMAL		= 0;
 	const int CAUTION		= 1;
 	const int WARNING		= 2;
-	const int VIEW_WIDTH	= 3;
+	const int VIEW_WIDTH	= 5;
 	const int VIEW_HEIGHT	= 10;
 	const int WARN_WIDTH	= 3;
 	const int WARN_HEIGHT	= 6;

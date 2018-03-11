@@ -35,7 +35,8 @@ void Enemy::setRoutine(int left, int top, int right, int bottom)
 
 void Enemy::see(int target_x, int target_y)
 {
-	int prev_state = state;
+	int prev_state = 0;
+	prev_state = state;
 	if (state == NORMAL || state == CAUTION) {
 		state = NORMAL;
 		if (facing == UP) {
