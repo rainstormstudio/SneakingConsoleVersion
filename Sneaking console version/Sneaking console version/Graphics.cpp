@@ -57,7 +57,7 @@ void Graphics::clear()
 	for (int i = 0; i < screen_height; i++)
 		for (int j = 0; j < screen_width; j++) {
 			foreground[i][j] = L' ';
-			color[i][j] = 7;
+			color[i][j] = 136;
 		}
 }
 

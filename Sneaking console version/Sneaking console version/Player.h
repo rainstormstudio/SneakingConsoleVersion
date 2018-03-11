@@ -9,6 +9,8 @@ private:
 	int color;
 
 public:
+	int strength;
+	bool strength_usable;
 	int posX;
 	int posY;
 	Player(char initAppearance, int color, int initX, int initY, float initSpeed);

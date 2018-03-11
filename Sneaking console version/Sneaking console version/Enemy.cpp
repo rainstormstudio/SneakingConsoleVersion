@@ -103,6 +103,10 @@ void Enemy::see(int target_x, int target_y)
 				extent = 0;
 			}
 		}
+		else if (posX == check_x && posY == check_y && state == CAUTION && prev_state == CAUTION) {
+			check_x = target_x;
+			check_y = target_y;
+		}
 	}
 	else if (state == WARNING) {
 		check_x = target_x;

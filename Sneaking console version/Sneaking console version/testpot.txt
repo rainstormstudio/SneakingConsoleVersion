@@ -1,0 +1,8 @@
+left   = 26
+top    = 30
+right  = 30
+bottom = 26
+left   = 44
+top    = 30
+right  = 30
+bottom = 44

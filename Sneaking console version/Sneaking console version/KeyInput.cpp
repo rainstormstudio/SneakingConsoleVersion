@@ -42,6 +42,11 @@ bool KeyInput::isShiftDown()
 	return shiftPressed;
 }
 
+bool KeyInput::isESCDown()
+{
+	return escapePressed;
+}
+
 bool KeyInput::isUpKeyUp()
 {
 	return wKeyReleased;
@@ -65,6 +70,11 @@ bool KeyInput::isRightKeyUp()
 bool KeyInput::isShiftUp()
 {
 	return shiftReleased;
+}
+
+bool KeyInput::isESCUp()
+{
+	return escapeReleased;
 }
 
 void KeyInput::update()
@@ -108,5 +118,13 @@ void KeyInput::update()
 	else {
 		shiftPressed = false;
 		shiftReleased = true;
+	}
+	if (convert(GetKeyState(VK_ESCAPE))) {
+		escapePressed = true;
+		escapeReleased = false;
+	}
+	else {
+		escapePressed = false;
+		escapeReleased = true;
 	}
 }

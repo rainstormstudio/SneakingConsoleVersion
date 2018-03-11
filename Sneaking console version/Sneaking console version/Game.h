@@ -30,4 +30,5 @@ public:
 	~Game();
 	void update(int delta);
 	void render();
+	void pause_screen();
 };

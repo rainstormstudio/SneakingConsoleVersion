@@ -10,5 +10,5 @@ private:
 	const int WARNING = 2;
 
 public:
-	void update(int state, int extent, Graphics* gfx, int screen_width, int screen_height);
+	void update(int state, int extent, int strength, int strength_usable, Graphics* gfx, int screen_width, int screen_height);
 };

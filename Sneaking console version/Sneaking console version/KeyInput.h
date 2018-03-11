@@ -13,12 +13,14 @@ private:
 	bool aKeyPressed = false;
 	bool dKeyPressed = false;
 	bool shiftPressed = false;
+	bool escapePressed = false;
 
 	bool wKeyReleased = false;
 	bool sKeyReleased = false;
 	bool aKeyReleased = false;
 	bool dKeyReleased = false;
 	bool shiftReleased = false;
+	bool escapeReleased = false;
 
 	bool convert(short value);
 
@@ -31,12 +33,14 @@ public:
 	bool isLeftKeyDown();
 	bool isRightKeyDown();
 	bool isShiftDown();
+	bool isESCDown();
 
 	bool isUpKeyUp();
 	bool isDownKeyUp();
 	bool isLeftKeyUp();
 	bool isRightKeyUp();
 	bool isShiftUp();
+	bool isESCUp();
 
 	void update();
 };
