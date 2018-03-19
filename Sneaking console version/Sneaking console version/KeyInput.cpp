@@ -47,6 +47,11 @@ bool KeyInput::isESCDown()
 	return escapePressed;
 }
 
+bool KeyInput::isEnterDown()
+{
+	return enterPressed;
+}
+
 bool KeyInput::isUpKeyUp()
 {
 	return wKeyReleased;
@@ -75,6 +80,11 @@ bool KeyInput::isShiftUp()
 bool KeyInput::isESCUp()
 {
 	return escapeReleased;
+}
+
+bool KeyInput::isEnterUp()
+{
+	return enterReleased;
 }
 
 void KeyInput::update()
@@ -126,5 +136,13 @@ void KeyInput::update()
 	else {
 		escapePressed = false;
 		escapeReleased = true;
+	}
+	if (convert(GetKeyState(VK_RETURN))) {
+		enterPressed = true;
+		enterReleased = false;
+	}
+	else {
+		enterPressed = false;
+		enterReleased = true;
 	}
 }

@@ -1,3 +1,3 @@
 ﻿  Game.cpp
-e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\game.cpp(40): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+e:\rainstorm projects\test\sneaking console version\sneaking console version\sneaking console version\game.cpp(46): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   Sneaking console version.vcxproj -> E:\RAINSTORM PROJECTS\Test\Sneaking console version\Sneaking console version\Debug\Sneaking console version.exe

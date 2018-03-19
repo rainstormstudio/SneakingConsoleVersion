@@ -5,13 +5,14 @@
 
 class Graphics {
 private:
-	int screen_width;
-	int screen_height;
 	HANDLE consoleHandle;
 	char foreground[500][500];
 	int color[500][500];
 
 public:
+	int screen_width;
+	int screen_height;
+
 	Graphics(int width, int height);				// constructor
 	~Graphics();									// destructor
 	void clear();									// clear

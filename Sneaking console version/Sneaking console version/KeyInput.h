@@ -14,6 +14,7 @@ private:
 	bool dKeyPressed = false;
 	bool shiftPressed = false;
 	bool escapePressed = false;
+	bool enterPressed = false;
 
 	bool wKeyReleased = false;
 	bool sKeyReleased = false;
@@ -21,6 +22,7 @@ private:
 	bool dKeyReleased = false;
 	bool shiftReleased = false;
 	bool escapeReleased = false;
+	bool enterReleased = false;
 
 	bool convert(short value);
 
@@ -34,6 +36,7 @@ public:
 	bool isRightKeyDown();
 	bool isShiftDown();
 	bool isESCDown();
+	bool isEnterDown();
 
 	bool isUpKeyUp();
 	bool isDownKeyUp();
@@ -41,6 +44,7 @@ public:
 	bool isRightKeyUp();
 	bool isShiftUp();
 	bool isESCUp();
+	bool isEnterUp();
 
 	void update();
 };

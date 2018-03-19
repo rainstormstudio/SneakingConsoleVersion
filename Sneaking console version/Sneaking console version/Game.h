@@ -4,6 +4,8 @@
 #include <cstdint>
 #include <thread>
 #include "Graphics.h"
+#include "LOGO.h"
+#include "MainMenu.h"
 #include "KeyInput.h"
 #include "Player.h"
 #include "Enemy_Group.h"

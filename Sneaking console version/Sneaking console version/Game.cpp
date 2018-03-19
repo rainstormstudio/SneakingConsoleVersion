@@ -12,7 +12,13 @@ Game::Game(int initWidth, int initHeight)
 	screen_width = initWidth;
 	screen_height = initHeight;
 	gfx = new Graphics(screen_width, screen_height);
+
+	logo(gfx);
+
 	keys = new KeyInput();
+
+	mainMenu(gfx, keys);
+
 	player = new Player(L'O', 43, screen_width / 2, screen_height / 2, 1);
 	enemy_group = new Enemy_Group(4, screen_width, screen_height);
 	hud = new HUD();
